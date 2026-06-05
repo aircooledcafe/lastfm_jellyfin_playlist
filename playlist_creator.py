@@ -9,6 +9,10 @@ import random
 from colours import *
 from datetime import datetime
 
+# Built by Ben Lee @aricooledcafe
+# A tool for creating playlist from top tracks from last.fm scrobbles.
+# Hit me up on mastodon https://infosec.exchange/@aircooledcafe
+
 load_dotenv()
 
 # JF environment
