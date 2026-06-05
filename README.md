@@ -11,7 +11,9 @@ A janky python script to create JellyFin playlists based on the tracks that you;
 Requirements:  
 `pip install dotenv requests`  
   
-You will need a last.fm API key, follow their instructions [here](https://www.last.fm/api).  
+You will need a last.fm and JellyFin API keys:  
+- For last.fm follow their instructions [here](https://www.last.fm/api).  
+- For JellyFin on your server got to `Dashboard > API Keys > New API Key`  
   
 Add your API key and some other values to the `.env` file:  
 ```bash
