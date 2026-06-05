@@ -20,19 +20,6 @@ JF_USER_ID = os.getenv("JF_USER_ID")
 LASTFM_API_KEY = os.getenv("LASTFM_API_KEY")
 LASTFM_USER = os.getenv("LASTFM_USER")
 
-# Get playlists from JellyFin
-# - extract playsts from JF
-def get_playlists(url, device_id, token):
-    url = f"{url}/UserFavoriteItems/{item_id}"
-    #auth_headers = {"Authorization": 'MediaBrowser Client="jellypi", Device="Script", DeviceId="1", Version="0.0.1", Token="{token}'}
-    auth_headers = {"Authorization": 'MediaBrowser Client="Jellyfin Web", Device="Chrome", DeviceId="{device_id}", Version="10.11.6", Token="{token}"'}
-    try:
-        res = requests.post(url, headers=auth_headers)
-        print(res.status_code)
-        print(res.json)
-    except Exception as e:
-        print(f"Failed to like track {item_id}. Status code: {e}")
-
 # For the following functions.
 # period can be one of the following strings:
 # overall | 7day | 1month | 3month | 6month | 12month
